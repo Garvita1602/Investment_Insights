@@ -1,0 +1,151 @@
+/* General Styles */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+
+/* Container for the App */
+
+.my-stocks-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: #0c0c0c;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Headings */
+
+h2,
+h3 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+
+/* Add Stock Section */
+
+input[type="text"] {
+    display: block;
+    width: 80%;
+    margin: 0 auto 20px auto;
+    padding: 12px;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.4);
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #2196F3;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+    background-color: #1976D2;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Stock List */
+
+
+/* Chart Container */
+
+.chart-wrapper {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+    .my-stocks-container {
+        padding: 15px;
+    }
+    input[type="text"] {
+        width: 90%;
+    }
+    ul {
+        max-width: 95%;
+    }
+    li {
+        padding: 15px;
+    }
+    button {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+}
+
+.remove-btn {
+    background-color: red;
+    /* Red background for the Remove button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: darkred;
+    /* Darker red on hover */
+}
+
+.view-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.view-btn:hover {
+    background-color: darkgreen;
+}
+
+.stock-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.stock-name {
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+}

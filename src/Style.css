@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    /* Set full background to black */
+    color: white;
+    /* Ensure text is visible on a black background */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    /* Adjust link color for visibility */
+}
+
+a:hover {
+    color: #007bff;
+    /* Highlight color for links on hover */
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    margin: 10px 0;
+}
